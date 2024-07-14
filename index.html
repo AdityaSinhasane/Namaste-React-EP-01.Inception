@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Top of Root</h1>  
+    <div id="root">
+        <h1>Akshay is here!</h1> <!--So here this Tag will be replaced by React at the time of Rendering-->
+    </div>
+    <h1>Hello Below of Root</h1>  
+    <!-- <script>  
+        /*Hello World Programm using JS*/  
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World from JavaScript!";
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script> -->
+    
+
+
+    <!--Core React link--> 
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>   <!--Home work:: why we should write crossorigin over here ?? Ans -> The crossorigin attribute is an important tool for managing how scripts are loaded from different origins, especially in terms of security and performance.-->
+    <!--React DOM -> Brigde between the browsers and React that is this link is used to connect the DOM-->   
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./App.js"></script>
+
+
+</body>
+</html>
